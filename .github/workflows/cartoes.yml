@@ -1,0 +1,30 @@
+name: Atualizar cartões do perfil
+
+on:
+  schedule:
+    - cron: "0 9 * * 1"   # toda segunda, 06h de Brasília
+  workflow_dispatch:       # botão "Run workflow" na aba Actions
+  push:
+    paths: ["scripts/gerar_cartoes.py", ".github/workflows/cartoes.yml"]
+
+permissions:
+  contents: write
+
+jobs:
+  cartoes:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Gerar SVGs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/gerar_cartoes.py
+      - name: Salvar se mudou
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add cards
+          git diff --cached --quiet || { git commit -m "Atualiza cartões do perfil"; git push; }

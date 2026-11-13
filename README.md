@@ -1,12 +1,13 @@
 ### Olá! Somos o SENAI CIMATEC da área de Meio Ambiente e Segurança com foco em Projetos de Desenvolvimento & Inovação 🌍 🧭 💡
 
 [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@SENAICIMATECoficial)
-[![Blog](https://img.shields.io/website-up-down-green-red/http/monip.org.svg)](https://seja.senaicimatec.com.br/pesquisa-e-inovacao-2/)
+[![Blog](https://img.shields.io/badge/Blog-Pesquisa_e_Inovação-0B3D6E?style=for-the-badge)](https://seja.senaicimatec.com.br/pesquisa-e-inovacao-2/)
 
 
-![AMA GitHub stats](https://github-readme-stats.vercel.app/api?username=geotecama&show_icons=true&theme=dracula)
+<!-- cartões gerados por .github/workflows/cartoes.yml (sem serviço externo) -->
+![AMA GitHub stats](cards/stats.svg)
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=geotecama&layout=compact)
+![Top Langs](cards/top-langs.svg)
 
 
 ## Tecnologias que estamos usando no dia-a-dia
@@ -22,4 +23,4 @@
 </div><br/>
 
 
-##🌱 Estamos comprometidos com a inovação e sustentabilidade para um futuro melhor! 💡🌍🔄
+## 🌱 Estamos comprometidos com a inovação e sustentabilidade para um futuro melhor! 💡🌍🔄
